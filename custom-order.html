@@ -32,12 +32,18 @@
             /* body{
                @apply text-[#EEEEEE];
             } */
+
+            .cart-list{
+                @apply flex flex-col items-stretch bg-red-600 min-h-screen w-[10%]; 
+            }
+
+
              .container-sun{
-              @apply  flex flex-row justify-center mt-[10%]  w-full gap-x-3.5 
+              @apply  flex flex-row justify-start mt-[10%] w-[90%] gap-x-3.5 
                       max-md:flex-col max-md:items-center max-md:mt-0;
              }
             .card-sun{
-              @apply gap-2 flex flex-col justify-center items-center bg-[#F5F0E8] border-2 border-solid w-[40%]
+              @apply gap-2 flex flex-col justify-center items-center bg-[#F5F0E8] border-2 border-solid w-[45%]
                      max-md:w-full ;
             }
             .btn-sun{
@@ -112,11 +118,11 @@
 
 
 
+    
 
 
 
-
-
+    <div class="flex flex-row">
 
     <div class="container-sun"> 
         <div class="card-sun bg-[#F5F0E8] p-[5%]"><img class="w-full h-auto" src="src/fired-chicken.jpg" alt="item-photo"/></div>
@@ -129,8 +135,12 @@
             </div>
             <button class="btn-sun">ADD TO CART</button>
         </div>
-
-
     </div>
+        <div class="cart-list">
+            THIS IS CART LIST 
+        </div>
+
+        </div>
+    
 </body>
 </html>
